@@ -11,7 +11,7 @@ module.exports = {
       filename: "remoteEntry.js",
 
       // Set what can we expose in the folder to the host
-      exposes: { "./ProductsIndex": "./src/index.js" },
+      exposes: { "./ProductsIndex": "./src/bootstrap.js" },
       shared: ["faker"],
     }),
     new HtmlWebpackPlugin({
